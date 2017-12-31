@@ -23,9 +23,19 @@ body {
   margin: 0;
 }
 
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+  background-color: #000;
+  color: #e2e2e2;
+  margin: 0;
+  padding: 1rem;
+}
+
 /* ------------- =header -------------- */
 
-h1 {
+header h1 {
   font-family: "Abril Fatface", serif;
   margin: 0 0 .5rem;
   font-size: 2rem;
@@ -38,56 +48,96 @@ header {
   padding-bottom: .75rem;
 }
 
+header nav {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0;
+}
+
 /* ------------- =navigation -------------- */
 
-nav ul {
+header nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   font-weight: bold;
 }
 
-nav li {
+header li {
   text-align: left;
 }
 
-nav a {
+header nav a {
   display: block;
   padding: .5em 1em;
   color: #333;
   text-decoration: none;
 }
 
-nav a:hover {
+header nav a:hover {
   background-color: #333;
   color: #fff;
 }
 
+/* ------------- =About-------------- */
+
+.about {
+  background-color: #aaa;
+}
+
+.about p {
+  padding: 2em;
+  max-width: 45em;
+}
+
+.about img {
+  float: left;
+  width: 50%;
+  max-width: 150px;
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 1em;
+}
+
+/* ------------- =Featured Image-------------- */
+
+.featured-image img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  display: block;
+  margin: 0 auto;
+}
+
+.featured-image p {
+  white-space: nowrap;
+  text-align: center;
+  font-weight: bold;
+}
+
+.featured-image div {
+  position: absolute;
+  background-color: #fff;
+  border-style: solid;
+  padding: .5rem;
+  width: 90%;
+  z-index: 2;
+}
+
 /* ------------- =Featured Products -------------- */
 
-h2 {
-  font-size: 1.5rem;
-  text-align: center;
-  font-family: "Abril Fatface", serif;
-  background-color: #000;
-  color: #e2e2e2;
-  margin: 0;
-  padding: 1rem 0;
-}
-
-p {
-  margin-top: .75em;
-  font-size: .75rem;
-}
-
-h3 {
+h4 {
   font-size: .875rem;
   font-weight: bold;
   margin: 0;
+  text-align: center;
   padding: .75rem 0;
 }
 
-img {
+.featured-products img {
   display: block;
   width: 90%;
   max-width: 120px;
@@ -122,7 +172,7 @@ img {
   font-size: .875rem;
 }
 
-div {
+.featured-products div {
   display: inline-block;
   float: left;
   width: 33.3333%;
@@ -142,4 +192,25 @@ div {
 
 .third {
   background-color: #aaa;
+}
+
+/* ------------- =Location -------------- */
+
+.location div {
+  background: #e2e2e2;
+  padding: 1em;
+}
+
+.location img {
+  width: 80%;
+  margin: 1em;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ------------- =Contact -------------- */
+
+.contact img {
+  display: block;
+  width: 20%;
 }
