@@ -286,15 +286,24 @@ h3 {
   margin: 1em;
 }
 
+.card-body p {
+  text-align: left;
+  margin-top: 0;
+}
+
+/* ------------- =Footer -------------- */
+
+.footer p {
+  font-size: .75rem;
+  padding: 1em;
+}
+
+/* ------------- =Reviews -------------- */
+
 .content p:nth-child(1) {
   font-size: 1.5rem;
   margin-bottom: .5rem;
   font-weight: bold;
-}
-
-.card-body p {
-  text-align: left;
-  margin-top: 0;
 }
 
 .card-img img {
@@ -321,11 +330,6 @@ h3 {
   background-color: #aaa;
   color: #000;
   text-align: center;
-}
-
-.footer p {
-  font-size: .75rem;
-  padding: 1em;
 }
 
 @media only screen and (min-width: 25em) {
