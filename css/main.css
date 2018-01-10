@@ -302,6 +302,19 @@ h4 {
   list-style-type: none;
 }
 
+
+/* ------------- =Footer -------------- */
+.footer {
+  background-color: #aaa;
+  color: #000;
+  text-align: center;
+}
+
+.footer p {
+  font-size: .75rem;
+  padding: 1em;
+}
+
 @media only screen and (min-width: 25em) {
 
 /* ------------- =navigation -------------- */
@@ -367,7 +380,6 @@ h4 {
 }
 
 }
-
 
 @media only screen and (min-width: 38em) {
 
