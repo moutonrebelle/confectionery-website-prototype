@@ -133,7 +133,7 @@ header nav a:hover {
 
 .featured-image div {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, .8);
   border-style: solid;
   padding: .5rem;
   width: 90%;
@@ -264,10 +264,6 @@ h4 {
   margin: auto;
   margin: 0 auto;
   font-weight: bold;
-}
-
-.btn-small {
-  font-size: .875rem;
 }
 
 .btn-ghost {
@@ -450,7 +446,7 @@ h4 {
     width: 100%;
   }
 
-  .content h2{
+  .content h2 {
     text-align: left;
   }
 
