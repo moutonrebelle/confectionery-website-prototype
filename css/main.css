@@ -33,6 +33,16 @@ h3 {
   padding: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #333;
+}
+
 /* ------------- =header -------------- */
 
 header h1 {
@@ -158,7 +168,7 @@ h4 {
   margin: 0 auto;
 }
 
-.btn {
+.featured-products .btn {
   display: inline-block;
   text-decoration: none;
   padding: .4em .75em .3em;
@@ -170,7 +180,9 @@ h4 {
   border-radius: 8px;
   background-color: #333;
   color: #fff;
-  font-size: 1.125rem;
+  font-size: .75rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .btn:hover {
@@ -213,6 +225,7 @@ h4 {
 
 .location img {
   width: 100%;
+  max-width: 300px;
   display: block;
   margin: 0 auto;
 }
@@ -220,6 +233,7 @@ h4 {
 .location p {
   padding: 0 1em;
   font-weight: bold;
+  text-align: center;
 }
 
 /* ------------- =Contact -------------- */
@@ -229,12 +243,31 @@ h4 {
   text-align: center;
 }
 
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: .4em .75em .3em;
+  list-style-type: none;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #333;
+  border-radius: 8px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
 .contact-btn {
   padding: 1em;
   width: 100%;
   margin: auto;
   margin: 0 auto;
   font-weight: bold;
+}
+
+.btn-small {
+  font-size: .875rem;
 }
 
 .btn-ghost {
@@ -250,11 +283,6 @@ h4 {
 }
 
 /* ------------- =Review -------------- */
-
-
-.review h3 {
-  margin-bottom: 1em;
-}
 
 .review {
   background-color: #ccc;
@@ -388,20 +416,25 @@ h4 {
     line-height: 1.4;
   }
 
-
 /* ------------- =review -------------- */
+
+ul.cards {
+  margin: 1rem 0 1rem 1rem;
+}
 
 .card {
     display: inline-block;
     text-align: center;
     width: 100%;
-    min-height: 27em;
     padding-right: 0;
   }
 
 .cards li {
   display: inline-block;
-  width: 25%;
+  float: left;
+  width: 33.3333%;
+  padding-right: 1rem;
+  margin: 0 auto;
 }
 
 .card-img {
@@ -410,8 +443,53 @@ h4 {
   display: block;
 }
 
+.card-img img {
+  width: 100%;
+}
+
 .content {
   width: 95%;
 }
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+/* ------------- =navigation -------------- */
+
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+  }
+
+  h1,
+  nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    padding-right: 2rem;
+  }
+}
+
+/* ------------- =about -------------- */
+
+.about p {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
 
 }
