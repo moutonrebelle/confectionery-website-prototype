@@ -403,6 +403,14 @@ h3 {
     line-height: 1.4;
   }
 
+  /* ------------- =about -------------- */
+
+  .about p {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
   /* ------------- =review -------------- */
 
   ul.cards {
